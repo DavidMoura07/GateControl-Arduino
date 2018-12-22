@@ -1,0 +1,1 @@
+#ifndef RFID_h#define RFID_h#include <SPI.h>#include <MFRC522.h>#include "Arduino.h"class RFID {  public:    RFID(int SS_PIN, int RST_PIN);    void startRead();    int hasCard();    String getCardID();      private:    int _SS_PIN;    int _RST_PIN;    MFRC522 _mfrc522;};#endif

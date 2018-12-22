@@ -1,0 +1,1 @@
+#include "Melody.h"#include "Arduino.h"Melody::Melody(int* tones, int* duration, int sizeMelody) {  _tones = tones;  _duration = duration;  _sizeMelody = sizeMelody;}Melody::tones(){  return _tones;}Melody::duration(){  return _duration;}Melody::sizeMelody(){  return _sizeMelody;}

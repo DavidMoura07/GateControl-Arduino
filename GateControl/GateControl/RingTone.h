@@ -1,0 +1,1 @@
+#ifndef RingTone_h#define RingTone_h#include "Arduino.h"#include "pitches.h"#include "Melody.h"class RingTone {  public:    RingTone(int buzzer);    void error();    void success();    void play(Melody melody);      private:    int _buzzer;};#endif

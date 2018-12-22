@@ -1,0 +1,1 @@
+#ifndef Melody_h#define Melody_h#include "Arduino.h"class Melody {  public:    Melody(int tones[], int duration[], int sizeMelody);    tones();    duration();    sizeMelody();  private:    int* _tones;    int* _duration;    int* _sizeMelody;};#endif
